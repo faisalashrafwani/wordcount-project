@@ -1,0 +1,9 @@
+<a href="{% url 'gohome' %}">Start Again</a>
+<h1>Let's Count Your Words: </h1>
+<h2>There are {{ countedwords }} words in your text.</h2> <br>
+<h3>Your Text: </h3> <br>
+{{ sendintocount }}
+<br>
+{% for text, key in sendworddict %}
+      <h4>{{ text }} : {{ key }}</h4>
+{% endfor %}

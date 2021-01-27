@@ -1,0 +1,10 @@
+<html>
+  <h3>This is a Homepage.</h3>
+  <h1>Let's do the Word Count</h1>
+  <form action="{% url 'gocount' %}">
+    <textarea name="fulltext" cols="40" rows="10"></textarea>
+    <br>
+    <input type="submit" name="thissubmit"/>
+  </form> <br>
+  <a href="{% url 'goprofile' %}">Go to Profile</a>
+</html>
